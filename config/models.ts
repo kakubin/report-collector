@@ -2,7 +2,7 @@ import {
   DataTypes,
   Model,
   Relationships,
-} from "./deps.ts";
+} from "./../deps.ts";
 
 export class Author extends Model {
   static table = "authors";
@@ -14,6 +14,10 @@ export class Author extends Model {
       autoIncrement: true,
     },
     name: DataTypes.string(20),
+  }
+
+  static report() {
+    return this.hasMany(Report)
   }
 }
 

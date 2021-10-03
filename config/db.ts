@@ -1,4 +1,4 @@
-import { Database, MySQLConnector } from "./deps.ts";
+import { Database, MySQLConnector } from "./../deps.ts";
 
 export interface DbConfig {
   host: string,
