@@ -14,6 +14,11 @@ export class Author extends Model {
       autoIncrement: true,
     },
     name: DataTypes.string(20),
+    nrid: DataTypes.INTEGER,
+    url: DataTypes.STRING,
+    attribution: DataTypes.STRING,
+    field: DataTypes.STRING,
+    latest_update: DataTypes.STRING,
   }
 
   static report() {
@@ -26,8 +31,13 @@ export class Report extends Model {
 
   static fields = {
     id: { primaryKey: true, autoIncrement: true },
-    title: DataTypes.STRING,
+    naid: DataTypes.INTEGER,
+    url: DataTypes.STRING,
+    type: DataTypes.STRING,
+    title_ja: DataTypes.STRING,
+    title_en: DataTypes.STRING,
     abstract: DataTypes.TEXT,
+    publisher: DataTypes.TEXT,
   }
 
   static author() {
