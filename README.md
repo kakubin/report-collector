@@ -1,5 +1,8 @@
 # report-collector
-研究に使うデータを収集する
+研究に使うデータを収集する管理する
+
+## :warning: Note
+諸事上で研究テーマが変わったため使わないことになった
 
 ## setup
 mysqlでDBを用意する
